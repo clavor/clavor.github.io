@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>CTE Program</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="icon" href="img/music-note.png"/>
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans|Source+Sans+Pro:200,400" rel="stylesheet">
+        <style>
+            .academies {
+                box-sizing: border-box;
+            }
+            .section {
+                margin-top: 10%;
+                margin-bottom: 10%;
+            }
+            .section p {
+                font-size: 25px;
+            }
+            .section.desc {
+                margin-left: 28%;
+                margin-right: 28%;
+            }
+
+            .section.programs {
+                margin-left: 28%;
+                margin-right: 28%;
+                margin-bottom: 0%;
+            }
+            
+            .section.history {
+                margin-left: 28%;
+                margin-right: 28%;
+            }
+            
+            .academies {
+                text-align: center;
+                padding-bottom: 10%;
+            }
+
+            .academy {
+                background-color: rgb(49, 49, 49);
+                color: white;
+                padding: 10px 20px;
+                border-radius: 16px 16px 0px 0px;
+                cursor: pointer;
+            }
+
+            .dropdown {
+                display: inline-block;
+                position: relative;
+            }
+
+            .drop-cont{
+                display: none;
+                text-align: center;
+                position: absolute;
+                background-color: rgb(68, 68, 68);
+                z-index: 1;
+                width: 100%;
+                overflow: auto;
+                border-radius: 0px 0px 16px 16px;
+            }
+
+            .drop-cont p{
+                color: rgb(255, 255, 255);
+                padding: 10px 0px;
+                display: block;
+            }
+
+            .dropdown:hover .drop-cont {
+                display: block;
+            }
+
+            .dropdown:hover .academy {
+                background-color: rgb(32, 32, 32);
+                color: white;
+            }
+
+            .events {
+                padding-top: 15px;
+                list-style-type: none;
+                font-size: 30px;
+                color: rgb(0, 55, 117);
+            }
+
+            .hover-info{
+                color: rgb(0, 55, 117);
+                text-align: center;
+                font-size: 10px;
+            }
+
+            .acad-title {
+                padding-bottom: 10px;
+                text-align: center;
+            }
+        </style>  
+    </head>
+
+    <nav>
+        <ul class="altnav">
+            <li><a class="active" href="cte_program.html">CTE Program</a></li>
+            <li><a href="school_chapter.html">TSA Chapter</a></li>
+            <li><a href="index.html">Design Brief</a></li>
+        </ul>
+    </nav>
+    <body>
+        <img src="img/BlansonCTE.jpg" alt="Image of Blanson CTE High School" width="100%">
+        <div class="section desc">
+            <h1 class="center-title should-bounce">What is Blanson?</h1>
+            <p class="should-bounce">Blanson CTE High School is a brand-new school that opened late August and is a school built purely around the premise of preparing students that are ready to go into the workforce after graduation. Here, students are able to graduate with an industry certification, workforce certification, or hours towards an associate's degree.</p>
+        </div>
+
+        <div class="section programs">
+            <h1 class="center-title should-bounce">CTE Programs Found at Blanson</h1>
+            <p class="acad-title should-bounce">At Blanson, Programs of Study are split up into three main academies.</p>
+            <p class="should-bounce hover-info">Hover over Academies to view their respective programs.</p>
+        </div>
+            <div class="acad-section">
+                <div class="academies">
+                    <div class="dropdown">
+                        <p class="academy">Information and Engineering Technology</p>
+                        <div class="drop-cont iet">
+                            <p>Robotics</p>
+                            <p>Instrumentation and Process Control</p>
+                            <p>Distribution and Logistics</p>
+                            <p>Audio Video Production</p>
+                            <p>Animation</p>
+                            <p>Computer Programming</p>
+                        </div>
+                    </div>
+                    <div class="dropdown">
+                        <p class="academy">Construction, Manufacturing, and Automotive Technology</p>
+                        <div class="drop-cont cmat">
+                            <p>HVAC</p>
+                            <p>Construction Technology</p>
+                            <p>Welding</p>
+                            <p>Machining</p>
+                            <p>Collision Repair</p>
+                            <p>Diesel Technology</p>
+                        </div>
+                    </div>
+                    <div class="dropdown">
+                        <p class="academy">Health and Human Services</p>
+                        <div class="drop-cont hhs">
+                            <p>Hospitality Services</p>
+                            <p>Emergency Medical Technician</p>
+                            <p>Dental Assistant</p>
+                            <p>Physical Therapy Assitant</p>
+                            <p>Personal Care Technician</p>
+                    </div>
+                    </div>
+                </div>
+            </div>
+
+        <div class="slideshow-container">
+            <div class="slide">
+                <div class="slide-number">1 / 3</div>
+                <img src="img/ITimg.jpg" style="width:100%">
+                <div class="slide-text">This is the Information and Engineering Technology (IET) Academy. Here you can find us animating, programming, building, and producing videos.</div>
+            </div>
+            <div class="slide">
+                <div class="slide-number">2 / 3</div>
+                <img src="img/construction.jpg" style="width:100%">
+                <div class="slide-text">This is the Construction Manufacturing and Automotive Technology (CMAT) academy. Here you can find us building and repairing cars.</div>
+            </div>
+            <div class="slide">
+                <div class="slide-number">3 / 3</div>
+                <img src="img/med.jpg" style="width:100%">
+                <div class="slide-text">This is the Health and Human Services (HHS) academy. Here you can find us working in the dental, physical, and medical fields.</div>
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span> 
+            <span class="dot" onclick="currentSlide(2)"></span> 
+            <span class="dot" onclick="currentSlide(3)"></span> 
+        </div>
+        <div class="section history">
+            <h1 class="center-title should-bounce">Events Blanson has Attended</h1>
+            <p class="should-bounce">On August of 2018, Blanson CTE High School opened to students. The first generation of Blanson students have participated in various events such as 
+            <ul class=" should-bounce events">
+                <li>Skills USA</li>
+                <li>Technology Student Association</li>
+                <li>Business Professional of America</li>
+                <li>Tech Rally</li>
+                <li>District Science Fair</li>
+                <li>Family and Consumer Services Competition</li>
+                <li>Aldine ISD Rodeo School Art Show</li>
+                <li>Scholastic Art and Writing</li>
+            </ul>
+        </div>
+        <br class="big">
+        <script src="slides.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="animation.js"></script>
+    </body>
+</html>

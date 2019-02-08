@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Buy Beat</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="icon" href="img/music-note.png"/>
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans|Source+Sans+Pro:200,400" rel="stylesheet">
+        <style>
+            .song-title {
+                font-size: 50px;
+            }
+            .song-desc {
+                font-size: 25px;
+            }
+        </style>
+    </head>
+
+    <nav>
+        <ul class="altnav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="songs.html">Songs</a></li>
+            <li><a href="biography.html">Biography</a></li>
+            <li><a href="cte_program.html">CTE</a></li>
+        </ul>
+    </nav>
+    <body>
+        <div id="salt-overlay" onclick="off();">
+            <div class="download-song center-download-content">
+                <h1 class="center-download-content">Purchase Complete</h1>
+                <p class="center-download-content">Beat</p>
+                <a class="center-download-content" href="music/Dusty Mix.mp3" target ='_blank' download>
+                    <img class="center-download-content" src="img/download-icon.png" alt="download-icon">
+                </a>
+            </div>
+        </div>
+        <br>
+        <div class="shop">
+            <div class="shop_img">
+                <img src="img/Cover3.png" alt="salt">
+            </div>
+            <div class="shop_text">
+                <h1 class="song-title">Beat</h1>
+                <br class="small">
+                <p class="song-desc">Beat, released on July 17 of 2014, was his third song. The name Beat was inspired by "life in general," says Clavor. He music is part of you in the form of you heart. "The beat of life is what I like to call it," said Clavor in an interview.</p>
+                <br class="small">
+                <a onclick="on();" href="#">Buy Beat</a>
+            </div>
+            <br class="big">
+        </div>
+    </body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="overlay.js"></script>
+</html>

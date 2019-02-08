@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Buy Salt</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="icon" href="img/music-note.png"/>
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans|Source+Sans+Pro:200,400" rel="stylesheet">
+        <style>
+        </style>
+    </head>
+
+    <nav>
+        <ul class="altnav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="songs.html">Songs</a></li>
+            <li><a href="biography.html">Biography</a></li>
+            <li><a href="cte_program.html">CTE</a></li>
+        </ul>
+    </nav>
+    <body>
+        <div id="salt-overlay" onclick="off();">
+            <div class="download-song center-download-content">
+                <h1 class="center-download-content">Purchase Complete</h1>
+                <p class="center-download-content">Salt</p>
+                <a class="center-download-content" href="music/Save Your Rivers.mp3" target ='_blank' download>
+                    <img class="center-download-content" src="img/download-icon.png" alt="download-icon">
+                </a>
+            </div>
+        </div>
+        <br>
+        <div class="shop">
+            <div class="shop_img">
+                <img src="img/Cover1.png" alt="salt">
+            </div>
+            <div class="shop_text">
+                <h1 class="song-title">Salt</h1>
+                <br class="small">
+                <p class="song-desc">Salt is Clavor's first ever song. He released it back in March 1 of 2011. This song brought him a lot fame and was the start of his career.</p>
+                <br class="small">
+                <a onclick="on();" href="#">Buy Salt</a>
+            </div>
+            <br class="big">
+        </div>
+    </body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="overlay.js"></script>
+</html>

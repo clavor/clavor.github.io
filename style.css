@@ -1,0 +1,440 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    background-image: url('img/background-img.png');
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+h1 {
+    font-family: 'Open Sans', sans-serif;
+}
+
+p, a, div, li {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 200;
+}
+
+p {
+    font-size: 25px;
+}
+
+/* br Sizes */
+
+br {
+    line-height: 50px;
+}
+
+br.small {
+    line-height: 25px;
+}
+
+br.big {
+    line-height: 100px;
+}
+
+/* Home Navigation Bar Styling */
+
+.homenav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    top: 0;
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+}
+
+.homenav li {
+    display: inline-block;
+    margin: 20px 24px;
+}
+
+.homenav li a{
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    font-size: 25px;
+}
+
+/* Alternative Navs */
+
+.altnav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    top: 0;
+    text-align: center;
+    background-color: rgb(44, 44, 44);
+}
+
+.altnav li {
+    display: inline-block;
+    margin: 20px 24px;
+}
+
+.altnav li a{
+    text-align: center;
+    text-decoration: none;
+    color: rgb(201, 201, 201);
+    font-size: 25px;
+}
+
+.altnav a:hover:not(.active) {
+    color: rgb(109, 109, 109);
+}
+
+.altnav .active {
+    color: white;
+}
+
+/* Biography and Home */
+
+.content-container {
+    padding: 0% 28% 0%;
+}
+
+.center-title {
+    text-align: center;
+    font-size: 45px;
+    padding-bottom: 40px;
+}
+
+.text-section p {
+    font-size: 25px;
+}
+
+.text-section {
+    padding-top: 32%;
+    padding-bottom: 32%;
+}
+
+.text-section-follow {
+    padding-bottom: 32%
+}
+
+.text-section-follow p {
+    font-size: 25px;
+}
+
+.text-section-follow img {
+    border-radius: 12px;
+}
+
+.button-holder {
+    text-align: center;
+}
+
+.button {
+    text-decoration: none;
+    text-align: center;
+    color: black;
+    padding: 10px 20px;
+    border-bottom: black solid;
+}
+
+
+/* Shop */
+
+
+.shop {
+    display: flex;
+    flex-direction: row;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 5%;
+}
+.shop_img {
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+}
+.shop_text {
+    flex-direction: column;
+    margin-left: 10%;
+    margin-right: 100px;
+}
+.shop_img img {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+}
+.shop_text a {
+    width: 500px;
+    display: block;
+    background-color: rgba(40, 40, 40, .85);
+    height: 32px;
+    text-decoration: none;
+    color: white;
+    padding-top: 10px;
+    text-align: center;
+    border-radius: 12px;
+}
+
+.song-title {
+    font-size: 100px;
+}
+
+.song-desc {
+    font-size: 25px;
+}
+/* Songs */
+
+.songs {
+    text-align: center;
+}
+.songs li {
+    list-style: none;
+    display: inline-block;
+    margin-right: 25px;
+    margin-bottom: 25px;
+}
+.songs img {
+    width: 640px;
+    height: 360px;
+    transition: .5s ease;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+}
+.songs_content {
+    display: block;
+    background-color: rgba(230, 230, 230, .8);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+}
+.songs_content audio {
+    width: 90%;
+}
+.song_container {
+    position: relative;
+}
+.play_img {
+    opacity: 0;
+    transition: .5s ease;
+    position: absolute;
+    top: 0;
+}
+.song_container:hover .cover_img {
+    opacity: .1;
+}
+.song_container:hover .play_img {
+    opacity: .9;
+}
+
+/* Slides */
+
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+}
+.slide {
+    display: none;
+}
+.slide img {
+    border-radius: 12px;
+}
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+.slide-text {
+    color: #f2f2f2;
+    font-size: 16px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 4.5px;
+    border-radius: 0 12px 0 12px;
+    text-align: center;
+    background-color: rgba(.3, .3, .3, .6);
+}
+.slide-text p {
+    text-align: center;
+}
+.slide-number {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+.active-slide, .dot:hover {
+    background-color: #717171;
+}
+
+/* Overlay */
+
+#salt-overlay {
+    position: fixed; /* Sit on top of the page content */
+    display: none; /* Hidden by default */
+    width: 100%; /* Full width (cover the whole page) */
+    height: 100%; /* Full height (cover the whole page) */
+    top: 0; 
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5); /* Black background with opacity */
+    z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+    cursor: pointer; /* Add a pointer on hover */
+}
+
+.download-song {
+    background-color: rgb(250, 250, 250);
+    width: 600px;
+    height: 600px;
+    border-radius: 50%;
+}
+
+.download-song h1 {
+    font-size: 50px;
+    top: 40%;
+    white-space: nowrap;
+    text-transform: uppercase;
+    text-decoration: underline;
+    border-radius: 12px;
+}
+
+.download-song p {
+    font-size: 25px;
+    top: 47%;
+}
+
+.download-song a {
+    background-color: rgba(0, 0, 0, .05);
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    top: 80%;
+}
+
+.download-song a img {
+    width: 75%;
+    height: 75%;
+    top: 45%;
+}
+
+.center-download-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    font-size: 50px;
+    color: black;
+    transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+}
+
+/* Footer */
+
+.footer-spliter {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin: 0 auto;
+}
+.footer-left {
+    flex-direction: column;
+    width: 50%;
+}
+.footer-right {
+    width: 50%;
+    flex-direction: column;
+}
+footer ul {
+    background-color: rgba(.3, .3, .3, .6);
+    text-align: center;
+    bottom: 0;
+}
+footer li {
+    margin-top: 5px;
+    padding-bottom: 5px;
+    color: white;
+    list-style: none;
+}
+footer a:link {
+    color: rgb(185, 185, 185);
+}
+footer a:hover {
+    color: gray;
+}
+
+/* Animations */
+
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+@-webkit-keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+}
+@keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+}
+
+.bounce {
+    animation-name: bounce;
+    animation-duration: 2s;
+}
+@keyframes bounce {
+    10% {opacity: 0; transform: translateY(25px)}
+    70% {opacity: 90%; transform: translateY(-5px)}
+    100% {opacity: 100%; transform: translateY(0px)}
+}
+
+.reveal {
+    animation-name: reveal;
+    animation-duration: 2s;
+}
+@keyframes reveal {
+    0% {background-color: black;}
+    100% {background-color: rgba(255, 255, 255, 0)}
+}
+
+.button-hover-animation {
+    animation-name: button-hover;
+    animation-duration: 1s;
+}
+@keyframes button-hover {
+    0% {background-color: white; color: black;}
+    100% {background-color: black; color: white;}
+}
